@@ -167,3 +167,48 @@
     padding: 72px 0;
   }
 }
+
+/* Keep grid children within the viewport at every breakpoint. */
+.hero > *, .about > *, .reg-grid > *, .courses > *, .form > * { min-width: 0; }
+.brand-logo img { max-width: min(470px, 100%); }
+
+@media (max-width: 1024px) {
+  .hero, .about, .reg-grid { grid-template-columns: minmax(0, 1fr); }
+  .section-head { align-items: start; }
+}
+
+@media (max-width: 640px) {
+  .wrap { width: calc(100% - 32px); }
+  nav.wrap { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 0; }
+  nav .brand-logo { flex: 1 1 auto; min-width: 0; }
+  nav .brand-logo img { width: min(44vw, 170px); max-width: 100%; }
+  nav .navlinks { flex: 0 0 auto; }
+  nav .pill { display: inline-flex; text-align: center; justify-content: center; max-width: 145px; line-height: 1.25; }
+  .hero { min-height: 0; padding: 34px 0 64px; gap: 35px; }
+  .hero h1 { font-size: clamp(2.65rem, 12.5vw, 4.3rem); line-height: 1.04; overflow-wrap: anywhere; letter-spacing: -.055em; }
+  .eyebrow { flex-wrap: wrap; }
+  .hero-card { min-height: 260px; aspect-ratio: 4 / 3; padding: 20px; }
+  .hc-top { gap: 8px; font-size: .65rem; letter-spacing: .06em; }
+  .hc-num { font-size: clamp(4rem, 17vw, 5rem); left: 18px; bottom: 17px; }
+  .hc-copy { right: 16px; bottom: 23px; width: 38%; font-size: .75rem; }
+  .orbit { width: 250px; height: 250px; border-width: 44px; right: -100px; top: 55px; }
+  section { padding: 64px 0; }
+  .section-head { gap: 16px; margin-bottom: 30px; }
+  .section-head h2 { line-height: 1.1; }
+  .course { min-height: 0; padding: 24px; }
+  .course h3 { margin-top: 26px; overflow-wrap: anywhere; }
+  .course .foot { flex-wrap: wrap; gap: 12px; }
+  .about-copy { font-size: 1rem; }
+  .steps { margin-top: 30px; }
+  .form { padding: 22px 18px; gap: 16px; }
+  .field input, .field select, .field textarea { min-width: 0; }
+  .footer-row { gap: 18px; }
+  .footer-logo img { width: min(220px, 70vw); }
+}
+
+@media (max-width: 360px) {
+  nav .brand-logo img { width: 125px; }
+  nav .pill { max-width: 120px; padding: 8px; font-size: .7rem; }
+  .hero h1 { font-size: 2.55rem; }
+  .hc-copy { font-size: .7rem; }
+}
