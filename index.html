@@ -21,11 +21,241 @@
     footer{padding:35px 0}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:24px;color:#aaa69f;font-size:.9rem}.social{display:flex;gap:20px}.footer-brand{display:flex;align-items:center;gap:10px}.footer-brand a{display:inline-flex;align-items:center}.insta-float{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);box-shadow:0 14px 30px rgba(0,0,0,.35);z-index:10;animation:floatBtn 3s ease-in-out infinite;border:2px solid rgba(255,255,255,.8)}.insta-float svg{width:28px;height:28px;display:block;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.insta-float .inner{width:24px;height:24px;border:2px solid #fff;border-radius:8px;position:absolute}.insta-float .dot{width:6px;height:6px;border-radius:50%;background:#fff;position:absolute;transform:translate(0,0)}.insta-float .inner,.insta-float .dot{position:absolute}.insta-float .inner{width:24px;height:24px;border:2px solid #fff;border-radius:8px}.insta-float .dot{width:6px;height:6px;border-radius:50%;background:#fff;right:14px;top:14px}.@keyframes fadeUp{0%{opacity:0;transform:translateY(18px)}100%{opacity:1;transform:translateY(0)}}@keyframes floatCard{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}@keyframes pulseGlow{0%,100%{opacity:.8;transform:rotate(-20deg) scale(1)}50%{opacity:1;transform:rotate(-20deg) scale(1.04)}}@keyframes floatBtn{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
     @media(max-width:1024px){nav{height:auto;padding:18px 0;flex-wrap:wrap;gap:14px}.brand-logo img{max-width:360px}.navlinks{gap:18px;flex-wrap:wrap;justify-content:flex-end}.hero{grid-template-columns:1fr;gap:40px;padding:50px 0 80px}.hero-card{max-width:540px;width:100%;margin:0 auto}.section-head,.about,.reg-grid{display:grid;grid-template-columns:1fr;gap:25px}.courses,.steps{grid-template-columns:1fr}.proof-grid{grid-template-columns:1fr 1fr}.wrap{width:min(100% - 30px,1160px)}}
     @media(max-width:640px){body{overflow-x:hidden}.nav{width:100%}.navlinks{gap:8px 12px;font-size:.72rem;justify-content:flex-end}.navlinks a:not(.pill){display:none}.nav{align-items:flex-start}.brand-logo{margin-top:0}.brand-logo img{max-width:160px;transform:none}.brand-logo:hover img{transform:none}.pill{padding:9px 12px}.hero{padding-top:24px;gap:26px}.eyebrow{letter-spacing:.12em;font-size:.66rem}.h1,.hero h1{font-size:clamp(2.8rem,16vw,4.3rem)}.lead{font-size:1rem;line-height:1.4}.actions{flex-direction:column;align-items:stretch}.btn{width:100%}.hero-card{aspect-ratio:4/3;max-width:100%}.hc-num{font-size:5rem}.course{padding:24px}.course h3{font-size:1.6rem}.proof-grid{grid-template-columns:1fr}.proof{padding:24px}.form{grid-template-columns:1fr}.field{grid-column:1/-1}.footer-row{align-items:flex-start;flex-direction:column}.social{gap:12px;flex-wrap:wrap}.insta-float{width:52px;height:52px;right:16px;bottom:16px}.wrap{width:min(100% - 18px,1160px)}section{padding:72px 0}.brand-logo.footer-logo img{max-width:220px}} 
+@media (max-width: 900px) {
+  nav {
+    height: auto;
+    padding: 18px 0;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .brand-logo img {
+    max-width: 300px;
+  }
+
+  .navlinks {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 50px 0 80px;
+  }
+
+  .hero-card {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .section-head,
+  .about,
+  .reg-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .courses,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    align-items: flex-start;
+  }
+
+  .brand-logo {
+    margin-top: 0;
+  }
+
+  .brand-logo img {
+    max-width: 160px;
+    transform: none;
+  }
+
+  .brand-logo:hover img {
+    transform: none;
+  }
+
+  .navlinks {
+    gap: 8px 12px;
+    font-size: 0.72rem;
+  }
+
+  .navlinks a:not(.pill) {
+    display: none;
+  }
+
+  .pill {
+    padding: 9px 12px;
+  }
+
+  .hero {
+    padding-top: 24px;
+    gap: 26px;
+  }
+
+  .eyebrow {
+    letter-spacing: 0.12em;
+    font-size: 0.68rem;
+  }
+
+  .hero h1,
+  .h1 {
+    font-size: clamp(2.8rem, 16vw, 4.3rem);
+  }
+
+  .lead {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-card {
+    aspect-ratio: 4 / 3;
+  }
+
+  .hc-num {
+    font-size: 5rem;
+  }
+
+  .course {
+    padding: 24px;
+  }
+
+  .course h3 {
+    font-size: 1.6rem;
+  }
+
+  .proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proof {
+    padding: 24px;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .field {
+    grid-column: 1 / -1;
+  }
+
+  .footer-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .social {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .insta-float {
+    width: 52px;
+    height: 52px;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .wrap {
+    width: min(100% - 18px, 1160px);
+  }
+
+  section {
+    padding: 72px 0;
+  }
+}
+
+/* Keep grid children within the viewport at every breakpoint. */
+.hero > *, .about > *, .reg-grid > *, .courses > *, .form > * { min-width: 0; }
+.brand-logo img { max-width: min(470px, 100%); }
+
+@media (max-width: 1024px) {
+  .hero, .about, .reg-grid { grid-template-columns: minmax(0, 1fr); }
+  .section-head { align-items: start; }
+}
+
+@media (max-width: 640px) {
+  .wrap { width: calc(100% - 32px); }
+  nav.wrap { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 0; }
+  nav .brand-logo { flex: 1 1 auto; min-width: 0; }
+  nav .brand-logo img { width: min(44vw, 170px); max-width: 100%; }
+  nav .navlinks { flex: 0 0 auto; }
+  nav .pill { display: inline-flex; text-align: center; justify-content: center; max-width: 145px; line-height: 1.25; }
+  .hero { min-height: 0; padding: 34px 0 64px; gap: 35px; }
+  .hero h1 { font-size: clamp(2.65rem, 12.5vw, 4.3rem); line-height: 1.04; overflow-wrap: anywhere; letter-spacing: -.055em; }
+  .eyebrow { flex-wrap: wrap; }
+  .hero-card { min-height: 260px; aspect-ratio: 4 / 3; padding: 20px; }
+  .hc-top { gap: 8px; font-size: .65rem; letter-spacing: .06em; }
+  .hc-num { font-size: clamp(4rem, 17vw, 5rem); left: 18px; bottom: 17px; }
+  .hc-copy { right: 16px; bottom: 23px; width: 38%; font-size: .75rem; }
+  .orbit { width: 250px; height: 250px; border-width: 44px; right: -100px; top: 55px; }
+  section { padding: 64px 0; }
+  .section-head { gap: 16px; margin-bottom: 30px; }
+  .section-head h2 { line-height: 1.1; }
+  .course { min-height: 0; padding: 24px; }
+  .course h3 { margin-top: 26px; overflow-wrap: anywhere; }
+  .course .foot { flex-wrap: wrap; gap: 12px; }
+  .about-copy { font-size: 1rem; }
+  .steps { margin-top: 30px; }
+  .form { padding: 22px 18px; gap: 16px; }
+  .field input, .field select, .field textarea { min-width: 0; }
+  .footer-row { gap: 18px; }
+  .footer-logo img { width: min(220px, 70vw); }
+}
+
+@media (max-width: 360px) {
+  nav .brand-logo img { width: 125px; }
+  nav .pill { max-width: 120px; padding: 8px; font-size: .7rem; }
+  .hero h1 { font-size: 2.55rem; }
+  .hc-copy { font-size: .7rem; }
+}
+
+
+/* Final mobile guard: images and navigation cannot widen the page. */
+html, body { max-width: 100%; overflow-x: clip; }
+img { max-width: 100%; }
+@media (max-width: 640px) {
+  nav.wrap { width: calc(100% - 32px); max-width: calc(100% - 32px); min-width: 0; overflow: visible; }
+  nav .brand-logo { display: block; flex: 0 1 auto; width: min(46vw, 170px); max-width: 46vw; min-width: 0; overflow: hidden; }
+  nav .brand-logo img { display: block; width: 100%; max-width: 100%; height: auto; transform: none; }
+  nav .brand-logo:hover img { transform: none; }
+  nav .navlinks { flex: 0 0 auto; max-width: 46vw; min-width: 0; }
+  nav .pill { white-space: normal; overflow-wrap: anywhere; }
+  .hero.wrap, .wrap { max-width: calc(100% - 32px); }
+  .hero > div:first-child { width: 100%; min-width: 0; }
+  .hero h1, .hero .lead { max-width: 100%; }
+  .insta-float { position: fixed; right: max(14px, env(safe-area-inset-right)); bottom: max(14px, env(safe-area-inset-bottom)); z-index: 100; transform: none; }
+}
   </style>
-  <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-  <nav class="wrap"><a class="brand-logo" href="#" aria-label="Selva Creations home"><img src="LOGO.png" onerror="this.onerror=null;this.src='selva-creations-logo.jpg';" alt="Selva Creations.in"></a><div class="navlinks"><a href="#courses">Courses</a><a href="#mentor">About</a><a href="https://www.instagram.com/selvacreations.in?stkn=MW1ramF2MHdveXc2aA==" target="_blank" rel="noopener">Instagram</a><a class="pill" href="#register">Join the next batch</a></div></nav>
+  <nav class="wrap"><a class="brand-logo" href="#" aria-label="Selva Creations home"><img src="LOGO.png" alt="Selva Creations.in"></a><div class="navlinks"><a href="#courses">Courses</a><a href="#mentor">About</a><a href="https://www.instagram.com/selvacreations.in?stkn=MW1ramF2MHdveXc2aA==" target="_blank" rel="noopener">Instagram</a><a class="pill" href="#register">Join the next batch</a></div></nav>
   <main>
     <header class="hero wrap">
       <div><div class="eyebrow">Offline classes · Chennai</div><h1>Learn design by <em>doing.</em></h1><p class="lead">Practical, job-focused training in Photoshop, wedding album design and graphic design—guided directly by a working designer.</p><div class="actions"><a class="btn" href="#courses">Explore courses →</a><a class="btn alt" href="https://wa.me/916382312163?text=Hi%20Selva%2C%20I%27m%20interested%20in%20your%20design%20class" target="_blank" rel="noopener">Chat on WhatsApp</a></div></div>
@@ -43,7 +273,7 @@
 
     <section class="register" id="register"><div class="wrap reg-grid"><div><h2>Start your design journey.</h2><p>Register your interest for the next Chennai batch. Venue, timing and fee details will be shared directly.</p></div><form class="form" id="interestForm"><div class="field"><label for="name">Your name</label><input id="name" name="name" required autocomplete="name" placeholder="Enter your name"></div><div class="field"><label for="phone">WhatsApp number</label><input id="phone" name="phone" required inputmode="tel" autocomplete="tel" placeholder="10-digit number"></div><div class="field full"><label for="course">Choose a course</label><select id="course" name="course" required><option value="">Select course</option><option>Photoshop + Wedding Album Design</option><option>Complete Graphic Design</option><option>Need help choosing</option></select></div><div class="field full"><label for="experience">Current experience</label><textarea id="experience" name="experience" rows="3" placeholder="Beginner / learning Photoshop / already working..."></textarea></div><button class="btn" type="submit">Register through WhatsApp →</button><p class="note">Submitting opens WhatsApp with your details. You can review the message before sending.</p></form></div></section>
   </main>
-  <footer><div class="wrap footer-row"><div class="footer-brand"><a class="brand-logo footer-logo" href="#" aria-label="Selva Creations home"><img src="LOGO.png" onerror="this.onerror=null;this.src='selva-creations-logo.jpg';" alt="Selva Creations.in"></a></div><div class="social"><a href="tel:+916382312163">+91 63823 12163</a><a href="https://www.instagram.com/selvacreations.in?stkn=MW1ramF2MHdveXc2aA==" target="_blank" rel="noopener">Instagram</a></div><span>© <span id="year"></span> Selva Creations</span></div></footer>
+  <footer><div class="wrap footer-row"><div class="footer-brand"><a class="brand-logo footer-logo" href="#" aria-label="Selva Creations home"><img src="LOGO.png" alt="Selva Creations.in"></a></div><div class="social"><a href="tel:+916382312163">+91 63823 12163</a><a href="https://www.instagram.com/selvacreations.in?stkn=MW1ramF2MHdveXc2aA==" target="_blank" rel="noopener">Instagram</a></div><span>© <span id="year"></span> Selva Creations</span></div></footer>
   <a class="insta-float" href="https://www.instagram.com/selvacreations.in?stkn=MW1ramF2MHdveXc2aA==" target="_blank" rel="noopener" aria-label="Instagram profile">
     <span class="inner"></span>
     <span class="dot"></span>
